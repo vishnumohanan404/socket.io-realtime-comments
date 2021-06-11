@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realtime comment app</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mt-4">
+          <h4>
+            <strong
+              >Realtime comment system using Nodejs, Socket.io, Express,
+              Mongodb, vanilla javascript and kick start bootstrap</strong
+            >
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            expedita sint quidem explicabo provident, quo in, temporibus aut
+            vitae, repellat deserunt? Facilis fugit suscipit ratione delectus
+            autem, a asperiores reprehenderit. Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Asperiores sapiente eum, facilis
+            minima veritatis aspernatur a, ea eaque quae perferendis commodi
+            aliquam optio. Modi, illo magni. Quibusdam facere sequi obcaecati.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="border-bottom pb-2">Comments</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="">Write your comments</label>
+            <textarea
+              name=""
+              id="textarea"
+              rows="3"
+              class="form-control"
+            ></textarea>
+          </div>
+        </div>
+        <div class="col-md-12 mb-4">
+          <button class="btn btn-primary mt-1" style="float: right" id="submitBtn">
+            Post comment
+          </button>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <ul class="comment_box">
+        </ul>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js" integrity="sha512-Z0SCX0bDbIzeUvsuax6apRISiAoxS1mXL05AO0tLdthrLb/uaVYUCqiRzMi/vqip5GQeo2p6jaMplnGl//yOvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
