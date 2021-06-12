@@ -53,7 +53,6 @@ function appendToDom(data){
 
 function broadcastComment(data){
     // emit event
-    console.log('hibhihsdi');
     socket.emit('comment',data)
 }
 
